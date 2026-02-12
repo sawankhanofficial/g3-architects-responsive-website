@@ -16,11 +16,98 @@ body{
     max-width:1200px;
     margin:0 auto;
 }
-
-
+.btn{
+    padding:12px 18px;
+    background-color:#FF900E;
+    border:2px solid #FF900F;
+    border-radius:5px;
+    color:#FFFFFF;
+    font-size:16px;
+    font-weight: 500;
+    letter-spacing:1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color:transparent;
+    color: #FF900E;
+}
 
 
 
 /*===========================
      Header Area Design 
 =============================*/
+header{
+    background-color:hsla(32, 100%, 53%, 0.048);
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.25rem 0rem;
+}
+.nav-links{
+    display:flex;
+    align-items: center;
+    gap:1.875rem;
+}
+.brand-name{
+    font-size:1.6rem;
+    cursor: pointer;
+}
+.nav-item{
+    list-style-type: none;
+}
+.nav-link{
+    color:#424242;
+    font-size:1rem;
+    text-decoration: none;
+    transition:0.3s;
+    font-weight: 500;
+}
+.nav-link:hover{
+    color:#FF900E;
+}
+
+
+/* Banner Area */
+.banner-text{
+    max-width:700px;
+    margin:3rem auto;
+    text-align:center;
+}
+.banner-title{
+    font-size:3rem;
+}
+.banner-description{
+    color:#727272;
+    font-size:0.9rem;
+    line-height:1.5rem;
+    margin-top:15px;
+}
+.banner-btn{
+    margin:25px 0px;
+}
+.banner-image img{
+    width:100%;
+}
+.banner-area{
+    padding-bottom:20px;
+}
+
+
+
+
+
+/*======================
+    Media Query
+========================*/
+
+/* Smaller Device */
+@media screen and (max-width:576px){
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+}
