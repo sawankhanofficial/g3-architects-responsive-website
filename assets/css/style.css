@@ -292,6 +292,7 @@ nav{
 }
 .sponser-item img{
     width:auto;
+    filter: grayscale(100%);
 }
 
 
