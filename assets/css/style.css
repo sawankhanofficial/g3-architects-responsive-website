@@ -17,14 +17,14 @@ body{
     margin:0 auto;
 }
 .btn{
-    padding:12px 18px;
+    padding:0.75rem 1.125rem;
     background-color:#FF900E;
-    border:2px solid #FF900F;
-    border-radius:5px;
+    border:0.125rem solid #FF900F;
+    border-radius:0.3125rem;
     color:#FFFFFF;
-    font-size:16px;
+    font-size:1rem;
     font-weight: 500;
-    letter-spacing:1px;
+    letter-spacing:0.0625rem;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -39,7 +39,7 @@ body{
      Header Area Design 
 =============================*/
 header{
-    background-color:hsla(32, 100%, 53%, 0.048);
+    background-color:rgba(255,144, 14, 0.1);
 }
 nav{
     display:flex;
@@ -84,17 +84,59 @@ nav{
     color:#727272;
     font-size:0.9rem;
     line-height:1.5rem;
-    margin-top:15px;
+    margin-top:0.9375rem;
 }
 .banner-btn{
-    margin:25px 0px;
+    margin:1.5625rem 0rem;
 }
 .banner-image img{
     width:100%;
 }
 .banner-area{
-    padding-bottom:20px;
+    padding-bottom:1.25rem;
 }
+
+
+
+
+/*===========================
+     About Section Design 
+=============================*/
+#about{
+    margin:5rem 0rem;
+}
+.about-content{
+    display:flex;
+    gap:3rem;
+    align-items: center;
+}
+.about-content-img{
+    flex:1;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:1rem;
+}
+.about-content-img img{
+    width:100%;
+}
+.about-content-text{
+    flex:1;
+}
+.about-title{
+    font-size:2.5rem;
+    margin-bottom:1rem;
+}
+.about-description{
+    color:#727272;
+    font-size:1rem;
+    line-height:1.5rem;
+    margin-bottom:1.5rem;
+    text-align:justify;
+}
+
+
+
+
 
 
 
@@ -106,8 +148,50 @@ nav{
 
 /* Smaller Device */
 @media screen and (max-width:576px){
+    
     nav{
         flex-direction:column;
         gap:20px;
     }
+    .banner-text{
+        margin:2rem auto;
+    }
+    .banner-title{
+    font-size:2rem;
+    }
+
+
+    #about{
+        margin:3rem 0rem;
+    }
+    .about-content{
+        flex-direction:column-reverse;
+    }
+    .about-content-text, .about-description{
+        text-align: center;
+    }
+    .about-title{
+        font-size:2rem;
+        text-align:center;
+    }
+    .about-content-img{
+        grid-template-columns:repeat(1, 1fr);
+    }
+
+}
+
+
+
+
+
+
+/* Medium Device */
+@media screen and (min-width:577px) and (max-width:992px){
+    .about-content{
+        flex-direction:column-reverse;
+    }
+    .about-content-text, .about-description{
+        text-align: center;
+    }
+
 }
